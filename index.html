@@ -3,32 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>pagina inicial</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
         }
-        .menu{
-            list-style: none;
-            border: 1px solid;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-        }
+
         .menu li{
-            position: relative;
+            list-style: none;/*limpar os marcadores padrao da lista UL ou OL*/
+            justify-content: space-around;/*distribui os intens uniformimente deixando um espaço entre eles*/
+            display: flex;/*permite que os elementos sejam organizados de maneira flexivel*/
+            align-items: center;/*centraliza verticalmente os elementos*/
+            background-color: rgb(175, 218, 175);/*cor de fundo*/
+            padding: 10px  0;/*adiciona 10 pixels de espaçamento em cima e em baixo sem mudar as laterais*/
+            position: fixed;/*fixa o elemento na tela para não rolar com a pagina*/
+            top: 0;/*posiciona o elemento na parte superior da tela*/
+            width: 100%;/*faz com que o elemento ocupe 100% da largura da tela*/
+            z-index: 1000;/*garante que os elementos fique acima dos outros itens da tela*/
         }
     </style>
 </head>
-<body>
-    <nav class="menu">
-        <ul>
-            <li>inicio</li>
-            <li>sobre</li>
-            <li>perfil</li>
-            <li>contatos</li>
-        </ul>
-    </nav>
+<body>]
+        
+    <ul class="menu">
+        <li>Inicio</li>
+        <li>sobre</li>
+        <li>perfil</li>
+        <li>contato</li>
+        <li><a href="./login.html">conta</a></li>
+    </ul>
+    
 </body>
 </html>
